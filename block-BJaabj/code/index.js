@@ -61,7 +61,7 @@ function getTable(){
  }
   
 }
-getTable()
+
 /*
 5. Create a function named `isLeapYear` with the following steps:
 
@@ -70,7 +70,11 @@ getTable()
 */
 function isLeapYear(){
   let year=+prompt("Enter a year");
-  if(year%4===0){
+  if(year%400===0){
+    alert(`${year} is a leap year`);
+  }else if(year%100===0){
+    alert(`${year} is not a leap year`);
+  }else if(year %4=== 0){
     alert(`${year} is a leap year`);
   }else{
     alert(`${year} is not a leap year`);
@@ -93,4 +97,4 @@ function getFactorial(){
    }
    alert( `The factorial of ${number} is ${fact}`);
 }
-getFactorial();
+
