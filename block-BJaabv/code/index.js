@@ -8,8 +8,9 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge() {
+function calculateDogAge(age,conversion=7) {
   // Your code goes here
+  return age*conversion;
 }
 
 /*
@@ -21,18 +22,23 @@ function calculateDogAge() {
 
 function calculateMoviesToWatch(age,movie) {
   // Your code goes here
-  if()
+  const maxAge=80;
+  let totalNoMovie=
+  (maxAge-age)*12*4*movie;
+   return totalNoMovie;
 
 }
 
 /*
 3. 🎖Create a function called celsiusToFahrenheit:
   * [ ] Accepts celsius temperature as argument.
-  * [ ] Convert it to fahrenheit and return "NN°F is NN°C"
+  * [ ] Convert it to fahrenheit and return "NN°C is NN°F"
 */
 //Your code goes here
-function celsiusToFahrenheit(celsius){
-  return (celsius * 9/5) + 32
+function celsiusToFahrenheit(temerature){
+ let fahrenheit= (temerature*9) / 5 + 32;
+ return `${temerature}F  is ${fahrenheit}c`
+ 
 }
 
 /*
@@ -41,8 +47,9 @@ function celsiusToFahrenheit(celsius){
   * [ ] Convert it to celsius and return "NN°F is NN°C"
 */
 //Your code goes here
-function fahrenheitToCelsius(fahrenheit) {
-  return (5/9) * (fahrenheit-32);
+function fahrenheitToCelsius(temprature) {
+  let celsius= (5/9) * (fahrenheit-32);
+  return `${temprature}C is ${celsius}`;
 }
 
 /*
@@ -53,8 +60,14 @@ function fahrenheitToCelsius(fahrenheit) {
   * [ ] If the value of n is below 0 return "The number below 1 is not allowed"
 */
 
-function pow() {
+function pow(x,n) {
   // Your code goes here
+
+  if(n<0){
+    return `the numberis below than 1`
+  }else{
+    return x ** n;
+  }
 }
 
 // Test
