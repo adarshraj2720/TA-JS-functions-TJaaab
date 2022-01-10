@@ -19,8 +19,10 @@ function calculateDogAge() {
   * [ ] Return the total number of movie you will watch.
 */
 
-function calculateMoviesToWatch() {
+function calculateMoviesToWatch(age,movie) {
   // Your code goes here
+  if()
+
 }
 
 /*
@@ -28,9 +30,9 @@ function calculateMoviesToWatch() {
   * [ ] Accepts celsius temperature as argument.
   * [ ] Convert it to fahrenheit and return "NN°F is NN°C"
 */
-
-function celsiusToFahrenheit() {
-  // Your code goes here
+//Your code goes here
+function celsiusToFahrenheit(celsius){
+  return (celsius * 9/5) + 32
 }
 
 /*
@@ -38,9 +40,9 @@ function celsiusToFahrenheit() {
   * [ ] Accepts fahrenheit temperature as argument.
   * [ ] Convert it to celsius and return "NN°F is NN°C"
 */
-
-function celsiusToFahrenheit() {
-  // Your code goes here
+//Your code goes here
+function fahrenheitToCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
 }
 
 /*
@@ -66,8 +68,25 @@ pow(-31, 2); // "The number below 1 is not allowed"
 and return sum or product of 1,…,n. If user enters any other value than `sum` or `product` alert `Not a valid Input`.
 */
 
-function sumOrProductOfN() {
+function sumOrProductOfN(n,string) {
   // Your code goes here
+  if(string=="add"){
+    let sum=0;
+    for(let i<0;i<n;i++){
+        sum +=i
+    }
+    return sum;
+  }else if(string=="product"){
+    let product=1;
+    for(let i=1;i<n;i++){
+       product = product*i
+    }
+    return product
+  }else{
+    return `Not a Valid`;
+  }
+      
+
 }
 
 sumOrProductOfN(4, 'sum'); // 10
@@ -78,8 +97,13 @@ sumOrProductOfN(4, 'hello'); // alert "Not a valid Input"
 6. 🎖Write a program that accepts a number n using argument and return the sum of the numbers 1 to n
 */
 
-function sumOfN() {
+function sumOfN(n) {
   // Your code goes here
+     let sum=0;
+    for(i=1;i<=n;i++){
+        sum +=i;
+    }
+    return sum;
 }
 
 /*
@@ -87,13 +111,28 @@ function sumOfN() {
 */
 
 // Your code goes here
+function sumOfN(n) {
+  let sum=0
+      for ( i = 0; i <= n; i=i+1) {
+      if (i % 5 === 0 || i % 7 === 0) {
+        sum =sum + i;
+          }
+        }
+        return sum;
+      }
 
 /*
 8. 🎖Write a function `min` that takes two arguments and returns their minimum.
 */
 
-function min() {
+function min(a,b) {
+
   // Your code goes here
+  if(a<b){
+    return a;
+  }else{
+    return b;
+  }
 }
 
 min(0, 10);
@@ -103,6 +142,7 @@ min(0, -10);
 9. 🎖Write a JavaScript function which accepts an argument and returns the type of the value.
 */
 
-function typeCheck() {
+function typeCheck(n) {
   // Your code goes here
+    return typeof(n)  ;
 }
